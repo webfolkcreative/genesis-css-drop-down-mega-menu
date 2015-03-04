@@ -1,0 +1,91 @@
+/* The following CSS is for Genesis Navigation that contains two levels of sub navigation. You must create a Menu is wordpress to use this CSS. In this example I have used the Genesis Sample theme as a starting point */
+
+/* Import Genesis stylesheet */
+@import url('../genesis/style.css');
+
+
+.nav-primary {
+	background: #eee;
+}
+
+.genesis-nav-menu a {
+	color: #000;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 0.85em;
+}
+
+.genesis-nav-menu .menu-item a:hover {
+	color: #000;
+}
+
+/* Style the sub-menu */
+.genesis-nav-menu .sub-menu {
+  width: 610px /* 3 columns*/;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  height: 250px;
+  -webkit-transition: none;
+  -moz-transition:    none;
+  -ms-transition:     none;
+  -o-transition:      none;
+  transition:         none;
+} 
+
+.genesis-nav-menu .sub-menu > li {
+  width: 200px;
+  float: left;
+}
+
+.genesis-nav-menu .sub-menu .menu-heading {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.genesis-nav-menu .sub-menu a {
+	border: 0;
+}
+
+.genesis-nav-menu .sub-menu a:hover {
+	color: #333;
+}
+
+/* Style second level sub-menu */
+.genesis-nav-menu .sub-menu .sub-menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: auto;
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu li {
+  display: inline-block;
+  clear: left;
+  left: 0;
+  font-weight: 300;
+  text-transform: capitalize;
+  position: static;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu > .menu-item {
+  position: relative;
+  left: 0;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu a {
+  padding: 10px 20px;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu a:hover {
+  color: #ccc;
+}
+
+/* Make sub-menu appear on hover */
+.genesis-nav-menu > .menu-item:hover + .sub-menu {
+  display: block;
+}
